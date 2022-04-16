@@ -1,5 +1,7 @@
 # Eloquent JavaScript
 
+All the code here uses Deno, instead of Node.js.
+
 My internet just gone and I just found I had Eloquent JavaScript downloaded sooo
 
 I will update the test to use std/testing.ts as soon my internet is back.

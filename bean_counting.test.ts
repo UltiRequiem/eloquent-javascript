@@ -6,5 +6,4 @@ import {
 import { assert } from "./testing.ts";
 
 Deno.test("Main", () => {
-
 });
