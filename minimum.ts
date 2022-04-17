@@ -14,17 +14,15 @@ export function min(...numbers: number[]) {
 }
 
 export function minRecursive(...numbers: number[]) {
-  function finder(current: number, competitor?: number): number {
+  const finder = (current: number, competitor?: number): number => {
     if (!competitor) {
       return current;
-    }
-
-    if (competitor < current) {
+    } else if (competitor < current) {
       current = competitor;
     }
 
     return finder(current, numbers.pop());
-  }
+  };
 
   return finder(Infinity, numbers.pop());
 }

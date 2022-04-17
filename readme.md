@@ -8,9 +8,9 @@ I will update the test to use std/testing.ts as soon my internet is back.
 
 ## Test Driven Development
 
-I hate test driven development.
+I love test driven development.
 
-> Not really, is cool sometimes.
+> Not really
 
 The book doesn't talk about testing (Or I don't get to that part yet) but I
 implemented tests for every challenge and followed the TDD method.
