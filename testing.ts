@@ -1,5 +1,8 @@
-export function assert(condition: unknown): asserts condition is true {
+export function assert(
+  condition: unknown,
+  message = "Codition is false!"
+): asserts condition {
   if (!condition) {
-    throw new Error("Codition is false!");
+    throw new Error(message);
   }
 }
