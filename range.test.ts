@@ -18,3 +18,12 @@ Deno.test("[range] Step", () => {
     assert(result[i] === expectedResult[i]);
   }
 });
+
+Deno.test("[range] Negative numbers", () => {
+  const result = range(5, 2, -1);
+  const expectedResult = [5, 4, 3, 2];
+
+  for (let i = 0; i < result.length; i++) {
+    assert(result[i] === expectedResult[i]);
+  }
+});
