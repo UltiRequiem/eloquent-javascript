@@ -1,19 +1,20 @@
 import { range } from "./range.ts";
 import { assert } from "./testing.ts";
 
-Deno.test("[range]", () => {
+Deno.test("[range] Main", () => {
   const result = range(1, 3);
   const expectedResult = [1, 2, 3];
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < result.length; i++) {
     assert(result[i] === expectedResult[i]);
   }
+});
 
-  const resultTwo = range(1, 10, 2);
-  const expectedResultTwo = [1, 3, 5, 7, 9];
-  console.log(resultTwo);
+Deno.test("[range] Step", () => {
+  const result = range(1, 10, 2);
+  const expectedResult = [1, 3, 5, 7, 9];
 
-  for (let i = 0; i < 3; i++) {
-    assert(resultTwo[i] === expectedResultTwo[i]);
+  for (let i = 0; i < result.length; i++) {
+    assert(result[i] === expectedResult[i]);
   }
 });

@@ -7,9 +7,17 @@ export function range(start: number, end: number, step = 1): number[] {
     throw new TypeError("Exepected all parameters to be numbers.");
   }
 
-  const length = end - start + 1;
+  const result: number[] = [];
 
-  let counter = 0;
+  const positiveStep = step >= 1;
 
-  return Array.from({ length }, () => (counter += step));
+  for (
+    let item = start;
+    item <= end;
+    positiveStep ? (item += step) : (item -= step)
+  ) {
+    result.push(item);
+  }
+
+  return result;
 }
