@@ -2,7 +2,8 @@ export interface List<T> {
   value: T;
   rest: List<T> | null;
 }
-export function arrayToList<T>(values: T[]): List<T> {
-  const [hey] = values;
-  return { value: hey, rest: null };
+
+// Recursivity FTW 🚀🚀🚀
+export function arrayToList<T>([value, ...values]: T[]): List<T> | null {
+  return value ? { value, rest: arrayToList(values) } : null;
 }
