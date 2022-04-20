@@ -1,20 +1,18 @@
 import { reverseArray, reverseArrayInPlace } from "./reversing_array.ts";
-import { assert } from "./testing.ts";
+import { assertEquals, assertNotEquals } from "../../deps.ts";
 
 Deno.test("[reverseArray]", () => {
   const exampleArray = [1, 2, 3, 4, 5];
   const inversedArray = reverseArray(exampleArray);
 
   // It returns a new copy
-  assert(exampleArray !== inversedArray);
+  assertNotEquals(exampleArray, inversedArray);
 
   const stdReversed = [...exampleArray].reverse();
 
-  assert(inversedArray.length === stdReversed.length);
+  assertEquals(inversedArray.length, stdReversed.length);
 
-  for (let i = 0; i < inversedArray.length; i++) {
-    assert(inversedArray[i] === stdReversed[i]);
-  }
+  assertEquals(inversedArray, stdReversed);
 });
 
 Deno.test("[reverseArrayInPlace]", () => {
@@ -23,11 +21,9 @@ Deno.test("[reverseArrayInPlace]", () => {
   const result = reverseArrayInPlace(exampleArray);
 
   // It's same because it mutates the same array and then returns it
-  assert(exampleArray === result);
+  assertEquals(exampleArray, result);
 
-  assert(exampleArray.length === result.length);
+  assertEquals(exampleArray.length, result.length);
 
-  for (let i = 0; i < result.length; i++) {
-    assert(result[i] === expectedResult[i]);
-  }
+  assertEquals(result, expectedResult);
 });

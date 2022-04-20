@@ -1,5 +1,5 @@
 import { isEven } from "./is_even.ts";
-import { assert } from "./testing.ts";
+import { assert } from "../../deps.ts";
 
 Deno.test("[isEven]", () => {
   assert(isEven(2));
