@@ -24,3 +24,15 @@ export function arrayToListFor<T>(values: T[]) {
 
   return rest as List<T>;
 }
+
+export function prepend<T>(value: T, rest: List<T>): List<T> {
+  return { value, rest };
+}
+
+export function nth<T>(list: List<T>, index: number): T {
+  if (index === 0) {
+    return list.value;
+  }
+
+  return nth(list.rest!, index - 1);
+}
