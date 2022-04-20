@@ -1,22 +1,24 @@
 function areNumbers(values: unknown[]): values is number[] {
   return values.every(Number.isInteger);
 }
+function assertAreNumbers(
+  values: unknown[],
+  message = "Expected all the items to be numbers.",
+): asserts values is number[] {
+  if (!areNumbers(values)) {
+    throw new TypeError(message);
+  }
+}
 
 export function range(start: number, end: number, step = 1): number[] {
-  if (!areNumbers([start, end, step])) {
-    throw new TypeError("Exepected all parameters to be numbers.");
-  }
+  assertAreNumbers([start, end, step]);
 
   const result: number[] = [];
 
   const positiveStep = step >= 1;
 
-  for (
-    let item = start;
-    item <= end;
-    positiveStep ? (item += step) : (item -= step)
-  ) {
-    result.push(item);
+  for (let i = start; positiveStep ? i <= end : i >= end; i += step) {
+    result.push(i);
   }
 
   return result;
