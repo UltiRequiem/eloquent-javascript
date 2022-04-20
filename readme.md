@@ -1,22 +1,41 @@
 # Eloquent JavaScript
 
-All the code here uses Deno, instead of Node.js.
+[Read the book for free!](https://eloquentjavascript.net) 📖
 
-My internet just gone and I just found I had Eloquent JavaScript downloaded sooo
+I solved the exercises using TypeScript and Test Driven Development.
 
-I will update the test to use std/testing.ts as soon my internet is back.
+> [A cool TDD Tutorial](https://github.com/dwyl/learn-tdd)
 
-## Test Driven Development
+## Documentation
 
-I love test driven development.
+Is hosted on
+[Deno Doc](https://doc.deno.land/https://deno.land/x/eloquent/mod.ts) 📄
 
-> Not really
+## Support
 
-The book doesn't talk about testing (Or I don't get to that part yet) but I
-implemented tests for every challenge and followed the TDD method.
+Open an Issue, I will check it a soon as possible 👀
 
-> Write tests first, and write code that passes them.
+If you want to hurry me up a bit
+[send me a tweet](https://twitter.com/UltiRequiem) 😆
 
-## License
+Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you like
+my work 🙏
 
-Licensed under the MIT License.
+Don't forget to start the repo ⭐
+
+## Versioning
+
+We use [Semantic Versioning](http://semver.org). For the versions available, see
+the [tags](https://github.com/UltiRequiem/eloquent/tags) 🏷️
+
+## Authors
+
+[Eliaz Bobadilla](https://ultirequiem.com) - Creator and Maintainer 💪
+
+See also the full list of
+[contributors](https://github.com/UltiRequiem/eloquent/contributors) who
+participated in this project ✨
+
+## Licence
+
+Licensed under the MIT License 📄
