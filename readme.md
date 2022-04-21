@@ -1,10 +1,38 @@
 # Eloquent JavaScript
 
+[![Code Coverage](https://codecov.io/gh/ultirequiem/eloquent-javascript/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/eloquent-javascript)
+[![Deno Doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/eloquent/mod.ts)
+
 [Read the book for free!](https://eloquentjavascript.net) 📖
 
 I solved the exercises using TypeScript and Test Driven Development.
 
 > [A cool TDD Tutorial](https://github.com/dwyl/learn-tdd)
+
+## Usage
+
+The API is the same on all this platforms ✔️
+
+### [Deno 🦕](https://deno.land/x/eloq)
+
+``javascript import { randomTimeZone } from
+"https://deno.land/x/eloquent/mod.ts";
+
+console.log(`My timezone is ${randomTimeZone()}`); ``
+
+### [Node.js 🐢🚀](https://npmjs.com/package/eloq)
+
+`javascript import { timeZones } from "eloq";`
+
+### [Browser 🌐](https://developer.mozilla.org/en-US/docs/Glossary/Browser)
+
+You can use any [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) 🔥
+
+Eg 👉
+[ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) ↔️
+[SkyPack](https://cdn.skypack.dev/eloq) 🆚
+[Script Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+↔️ [JSDelivr](https://cdn.jsdelivr.net/npm/eloq)
 
 ## Documentation
 
