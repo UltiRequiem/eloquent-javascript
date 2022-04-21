@@ -68,6 +68,3 @@ participated in this project ✨
 ## Licence
 
 Licensed under the MIT License 📄
-
-```
-```
