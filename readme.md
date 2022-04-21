@@ -15,14 +15,15 @@ The API is the same on all this platforms ✔️
 
 ### [Deno 🦕](https://deno.land/x/eloq)
 
-``javascript import { randomTimeZone } from
-"https://deno.land/x/eloquent/mod.ts";
-
-console.log(`My timezone is ${randomTimeZone()}`); ``
+````javascript
+import * as eloq from "https://deno.land/x/eloquent/mod.ts";
+```
 
 ### [Node.js 🐢🚀](https://npmjs.com/package/eloq)
 
-`javascript import { timeZones } from "eloq";`
+```javascript
+import * as eloq from "eloq";
+```
 
 ### [Browser 🌐](https://developer.mozilla.org/en-US/docs/Glossary/Browser)
 
@@ -67,3 +68,4 @@ participated in this project ✨
 ## Licence
 
 Licensed under the MIT License 📄
+````
