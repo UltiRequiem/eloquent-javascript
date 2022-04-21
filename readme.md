@@ -15,7 +15,7 @@ The API is the same on all this platforms ✔️
 
 ### [Deno 🦕](https://deno.land/x/eloq)
 
-````javascript
+```javascript
 import * as eloq from "https://deno.land/x/eloquent/mod.ts";
 ```
 
@@ -68,4 +68,6 @@ participated in this project ✨
 ## Licence
 
 Licensed under the MIT License 📄
-````
+
+```
+```
