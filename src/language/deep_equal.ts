@@ -1,3 +1,5 @@
+// deno-lint-ignore-file no-explicit-any
+
 export function deepEqual(first: any, second: any) {
   const [firstType, secondType] = [typeof first, typeof second];
 
