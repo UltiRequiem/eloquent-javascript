@@ -15,7 +15,7 @@ Deno.test("[range] Negative numbers", () => {
 
 Deno.test("[range] Throws", () => {
   assertThrows(() => {
-    // @ts-expect-error
+    // @ts-expect-error Should throw
     range(1, "a", 0);
   });
 });

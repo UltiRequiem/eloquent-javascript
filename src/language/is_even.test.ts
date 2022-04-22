@@ -10,6 +10,6 @@ Deno.test("[isEven]", () => {
   assert(!isEven(75));
   assert(!isEven(75));
   assertThrows(() => isEven(-3));
-  // @ts-expect-error
+  // @ts-expect-error Should throw
   assertThrows(() => isEven("a"));
 });
