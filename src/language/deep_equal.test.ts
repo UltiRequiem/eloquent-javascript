@@ -7,4 +7,6 @@ Deno.test("deepEqual", () => {
   assert(deepEqual(obj, obj));
   assert(!deepEqual(obj, { here: 1, object: 2 }));
   assert(deepEqual(obj, { here: { is: "an" }, object: 2 }));
+  assert(!deepEqual({ a: "b" }, { c: "d" }));
+  assert(!deepEqual({ hey: "rosa", chales: "diah" }, { me: "eliaz" }));
 });

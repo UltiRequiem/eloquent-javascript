@@ -1,5 +1,5 @@
 import { isEven } from "./is_even.ts";
-import { assert } from "../../deps.ts";
+import { assert, assertThrows } from "../../deps.ts";
 
 Deno.test("[isEven]", () => {
   assert(isEven(2));
@@ -8,4 +8,8 @@ Deno.test("[isEven]", () => {
   assert(isEven(24));
   assert(isEven(50));
   assert(!isEven(75));
+  assert(!isEven(75));
+  assertThrows(() => isEven(-3));
+  // @ts-expect-error
+  assertThrows(() => isEven("a"));
 });
