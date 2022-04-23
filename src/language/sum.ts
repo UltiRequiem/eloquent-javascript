@@ -5,7 +5,7 @@ export function sum(...numbers: number[]) {
 export function sumFor(...numbers: number[]) {
   let sum = 0;
 
-  for (let number of numbers) {
+  for (const number of numbers) {
     sum += number;
   }
 
