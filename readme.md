@@ -27,6 +27,22 @@ I solved the exercises using TypeScript and Test Driven Development.
   [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/chessboard.ts) -
   [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/chessboard.test.ts)
 
+#### [Functions](https://eloquentjavascript.net/03_functions.html)
+
+- [Minimum](https://eloquentjavascript.net/03_functions.html#i_XTmO7z7MPq) -
+  [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/minimum.ts) -
+  [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/minimum.test.ts)
+
+- [Recursion](https://eloquentjavascript.net/03_functions.html#i_jxl1p970Fy) -
+  [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/is_even.ts) -
+  [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/is_even.test.ts)
+
+- [Bean Counting](https://eloquentjavascript.net/03_functions.html#i_3rsiDgC2do) -
+  [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/bean_counting.ts) -
+  [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/bean_counting.test.ts)
+
+#### [Data Structures](https://eloquentjavascript.net/04_data.html)
+
 ## Usage
 
 The API is the same on all this platforms ✔️
