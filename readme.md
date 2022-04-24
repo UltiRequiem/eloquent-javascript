@@ -19,6 +19,14 @@ I solved the exercises using TypeScript and Test Driven Development.
   [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/triangle.ts) -
   [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/triangle.test.ts)
 
+- [FizzBuzz](https://eloquentjavascript.net/02_program_structure.html#i_rebKE3gdjV) -
+  [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/fizzbuzz.ts) -
+  [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/fizzbuzz.test.ts)
+
+- [Chessboard](https://eloquentjavascript.net/02_program_structure.html#i_swb9JBtSQQ) -
+  [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/chessboard.ts) -
+  [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/chessboard.test.ts)
+
 ## Usage
 
 The API is the same on all this platforms ✔️
