@@ -9,6 +9,16 @@ I solved the exercises using TypeScript and Test Driven Development.
 
 > [A cool TDD Tutorial](https://github.com/dwyl/learn-tdd)
 
+## Exercises
+
+### Language
+
+#### [Program Structure](https://eloquentjavascript.net/02_program_structure.html)
+
+- [Looping a Triangle](https://eloquentjavascript.net/02_program_structure.html#i_umoXp9u0e7) -
+  [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/triangle.ts) -
+  [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/triangle.test.ts)
+
 ## Usage
 
 The API is the same on all this platforms ✔️
