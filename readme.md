@@ -5,9 +5,8 @@
 
 [Read the book for free!](https://eloquentjavascript.net) 📖
 
-I solved the exercises using TypeScript and Test Driven Development.
-
-> [A cool TDD Tutorial](https://github.com/dwyl/learn-tdd)
+I solved the exercises using TypeScript and
+[Test Driven Development](https://github.com/dwyl/learn-tdd).
 
 ### Language
 
