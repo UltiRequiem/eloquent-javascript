@@ -43,6 +43,22 @@ I solved the exercises using TypeScript and Test Driven Development.
 
 #### [Data Structures](https://eloquentjavascript.net/04_data.html)
 
+- [Range](https://eloquentjavascript.net/04_data.html#i_8ZspxiCEC) -
+  [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/range.ts) -
+  [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/range.test.ts)
+
+- [Reversing an Array](https://eloquentjavascript.net/04_data.html#i_6xTmjj4Rf5) -
+  [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/reversing_array.ts) -
+  [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/reversing_array.test.ts)
+
+- [List](https://eloquentjavascript.net/04_data.html#i_nSTX34CM1M) -
+  [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/list.test.ts) -
+  [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/list.test.ts)
+
+- [Deep Equal](https://eloquentjavascript.net/04_data.html#i_IJBU+aXOIC) -
+  [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/deep_equal.ts) -
+  [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/deep_equal.test.ts)
+
 ## Usage
 
 The API is the same on all this platforms ✔️
