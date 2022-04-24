@@ -9,8 +9,6 @@ I solved the exercises using TypeScript and Test Driven Development.
 
 > [A cool TDD Tutorial](https://github.com/dwyl/learn-tdd)
 
-## Exercises
-
 ### Language
 
 #### [Program Structure](https://eloquentjavascript.net/02_program_structure.html)
