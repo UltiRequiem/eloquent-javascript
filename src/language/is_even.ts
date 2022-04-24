@@ -3,16 +3,16 @@ export function isEven(numberToTest: number) {
     throw new Error("Only positive numbers are allowed.");
   }
 
-  function isEvenCore(number: number): boolean {
-    if (numberToTest === 0) {
+  function isEvenCore(coreNumber: number): boolean {
+    if (coreNumber === 0) {
       return true;
     }
 
-    if (numberToTest == 1) {
+    if (coreNumber === 1) {
       return false;
     }
 
-    return isEvenCore(number - 2);
+    return isEvenCore(coreNumber - 2);
   }
 
   return isEvenCore(numberToTest);
