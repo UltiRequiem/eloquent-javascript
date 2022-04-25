@@ -1,4 +1,4 @@
-export * from "./array_to_list.ts";
+export * from "./list.ts";
 export * from "./bean_counting.ts";
 export * from "./minimum.ts";
 export * from "./is_even.ts";
