@@ -66,7 +66,7 @@ The API is the same on all this platforms ✔️
 ### [Deno 🦕](https://deno.land/x/eloq)
 
 ```javascript
-import * as eloq from "https://deno.land/x/eloquent/mod.ts";
+import * as eloq from "https://deno.land/x/eloq/mod.ts";
 ```
 
 ### [Node.js 🐢🚀](https://npmjs.com/package/eloq)
@@ -87,8 +87,7 @@ Eg 👉
 
 ## Documentation
 
-Is hosted on
-[Deno Doc](https://doc.deno.land/https://deno.land/x/eloquent/mod.ts) 📄
+Is hosted on [Deno Doc](https://doc.deno.land/https://deno.land/x/eloq/mod.ts) 📄
 
 ## Support
 
@@ -105,15 +104,15 @@ Don't forget to start the repo ⭐
 ## Versioning
 
 We use [Semantic Versioning](http://semver.org). For the versions available, see
-the [tags](https://github.com/UltiRequiem/eloquent/tags) 🏷️
+the [tags](https://github.com/UltiRequiem/eloquent-javascript/tags) 🏷️
 
 ## Authors
 
 [Eliaz Bobadilla](https://ultirequiem.com) - Creator and Maintainer 💪
 
 See also the full list of
-[contributors](https://github.com/UltiRequiem/eloquent/contributors) who
-participated in this project ✨
+[contributors](https://github.com/UltiRequiem/eloquent-javascript/contributors)
+who participated in this project ✨
 
 ## Licence
 
