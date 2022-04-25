@@ -3,9 +3,9 @@
 [![Code Coverage](https://codecov.io/gh/ultirequiem/eloquent-javascript/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/eloquent-javascript)
 [![Deno Doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/eloquent/mod.ts)
 
-[Read the book for free!](https://eloquentjavascript.net) 📖
+**[Read the book for free!](https://eloquentjavascript.net) 📖**
 
-I solved the exercises using TypeScript and
+I solved the exercises using [TypeScript](https://typescriptlang.org) and
 [Test Driven Development](https://github.com/dwyl/learn-tdd).
 
 ### Language
@@ -57,6 +57,9 @@ I solved the exercises using TypeScript and
   [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/deep_equal.test.ts)
 
 ## Usage
+
+The vast majority of solutions are completely reusable functions, so I decided
+to package them.
 
 The API is the same on all this platforms ✔️
 
