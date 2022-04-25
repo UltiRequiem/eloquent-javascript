@@ -9,5 +9,7 @@ export function triangleFor(rows = 3) {
     result += "#".repeat(i) + "\n";
   }
 
+  result = result.slice(0, -1);
+
   return result;
 }
