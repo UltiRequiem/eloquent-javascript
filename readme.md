@@ -20,6 +20,9 @@ I solved the exercises using [TypeScript](https://typescriptlang.org) and
   [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/fizzbuzz.ts) -
   [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/fizzbuzz.test.ts)
 
+> Returns the result as an array instead of printing it to the console for
+> reusability 🧐
+
 - [Chessboard](https://eloquentjavascript.net/02_program_structure.html#i_swb9JBtSQQ) -
   [Solution](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/chessboard.ts) -
   [Test](https://github.com/UltiRequiem/eloquent-javascript/blob/main/src/language/chessboard.test.ts)
