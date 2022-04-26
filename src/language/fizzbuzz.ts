@@ -22,3 +22,5 @@ export function fizzBuzz(max = 100) {
 
   return result;
 }
+
+console.log(JSON.stringify(fizzBuzz(10)));
