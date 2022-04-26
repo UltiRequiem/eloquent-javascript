@@ -16,13 +16,15 @@ export function arrayToListReduce<T>(values: T[]) {
 }
 
 export function arrayToListFor<T>(values: T[]) {
-  let rest = {};
+  let rest: List<T> | null = null;
 
-  for (let i = values.length - 1; i >= 0; i--) {
-    rest = { value: values[i], rest };
+  const reversedItems = values.reverse();
+
+  for (const value of reversedItems) {
+    rest = { value, rest };
   }
 
-  return rest as List<T>;
+  return rest;
 }
 
 export function prepend<T>(value: T, rest: List<T>): List<T> {
@@ -34,5 +36,9 @@ export function nth<T>(list: List<T>, index: number): T {
     return list.value;
   }
 
-  return nth(list.rest!, index - 1);
+  if (list.rest === null) {
+    throw new RangeError("Index out of range.");
+  }
+
+  return nth(list.rest, index - 1);
 }
