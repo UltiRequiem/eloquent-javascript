@@ -3,19 +3,21 @@ export const isDivisbleBy = (n: number, divisor: number) => n % divisor === 0;
 export function fizzBuzz(max = 100) {
   const result = [];
 
-  for (let i = 1; i <= max; i++) {
-    const isDivisibleBy3 = isDivisbleBy(i, 3);
-    const isDivisibleBy5 = isDivisbleBy(i, 5);
+  for (let number = 1; number <= max; number++) {
+    const fizz = isDivisbleBy(number, 3);
+    const buzz = isDivisbleBy(number, 5);
 
-    if (isDivisibleBy3) {
+    const fizzBuzz = fizz && buzz;
+
+    if (fizz) {
       result.push("Fizz");
-    } else if (isDivisibleBy5 && !isDivisibleBy3) {
+    } else if (buzz) {
       result.push("Buzz");
     } else {
-      result.push(i);
+      result.push(number);
     }
 
-    if (isDivisibleBy3 && isDivisibleBy5) {
+    if (fizzBuzz) {
       result.push("FizzBuzz");
     }
   }
