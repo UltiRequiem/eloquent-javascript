@@ -7,7 +7,7 @@ import {
   prepend,
 } from "./list.ts";
 
-const EXAMPLE_LIST = {
+const rest = {
   value: 1,
   rest: {
     value: 2,
@@ -19,24 +19,24 @@ const EXAMPLE_LIST = {
 };
 
 Deno.test("[arrayToList]", () => {
-  assertEquals(arrayToList([1, 2, 3]), EXAMPLE_LIST);
+  assertEquals(arrayToList([1, 2, 3]), rest);
 });
 
 Deno.test("[arrayToListFor]", () => {
-  assertEquals(arrayToListFor([1, 2, 3]), EXAMPLE_LIST);
+  assertEquals(arrayToListFor([1, 2, 3]), rest);
 });
 
 Deno.test("[arrayToListReduce]", () => {
-  assertEquals(arrayToListReduce([1, 2, 3]), EXAMPLE_LIST);
+  assertEquals(arrayToListReduce([1, 2, 3]), rest);
 });
 
 Deno.test("[nth]", () => {
-  const nth3 = nth(EXAMPLE_LIST, 2);
+  const nth3 = nth(rest, 2);
   assertEquals(nth3, 3);
 
   assertThrows(
     () => {
-      nth(EXAMPLE_LIST, 5);
+      nth(rest, 5);
     },
     RangeError,
     "Index out of range",
@@ -44,10 +44,5 @@ Deno.test("[nth]", () => {
 });
 
 Deno.test("[prepend]", () => {
-  const prepended = prepend(4, EXAMPLE_LIST);
-
-  assertEquals(prepended, {
-    value: 4,
-    rest: EXAMPLE_LIST,
-  });
+  assertEquals(prepend(4, rest), { value: 4, rest });
 });
