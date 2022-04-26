@@ -1,3 +1,5 @@
+// deno-lint-ignore-file no-explicit-any
+
 export function repeat<T extends (...args: any) => any>(
   times: number,
   action: T,
