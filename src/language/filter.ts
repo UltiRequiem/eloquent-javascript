@@ -2,7 +2,7 @@ export type FilterCallback<T> = (
   item: T,
   index: number,
   array: readonly T[],
-) => boolean;
+) => unknown;
 
 export function filter<T>(array: readonly T[], test: FilterCallback<T>) {
   const result: T[] = [];
