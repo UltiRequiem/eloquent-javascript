@@ -1,4 +1,4 @@
-export type FilterCallback<T> = (
+export type FilterCallback<T = never> = (
   item: T,
   index: number,
   array: readonly T[],
