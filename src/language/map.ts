@@ -1,17 +1,17 @@
-export type MapCallback<T = never> = (
+export type MapCallback<T> = (
   value: T,
   index: number,
-  array: T[],
+  array: readonly T[],
 ) => unknown;
 
-export function map<T>(array: T[], transform: MapCallback<T>) {
-  const result: unknown[] = [];
+export function map<T, F extends MapCallback<T>>(array: T[], transform: F) {
+  const result = [];
 
-  for (const [index, value] of array.entries()) {
+  const entries = array.entries();
+
+  for (const [index, value] of entries) {
     result.push(transform(value, index, array));
   }
 
-  return result;
+  return result as ReturnType<F>[];
 }
-
-[].map;

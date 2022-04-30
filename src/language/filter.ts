@@ -5,9 +5,11 @@ export type FilterCallback<T = never> = (
 ) => unknown;
 
 export function filter<T>(array: readonly T[], test: FilterCallback<T>) {
-  const result: T[] = [];
+  const result = [];
 
-  for (const [index, value] of array.entries()) {
+  const entries = array.entries();
+
+  for (const [index, value] of entries) {
     if (test(value, index, array)) {
       result.push(value);
     }
