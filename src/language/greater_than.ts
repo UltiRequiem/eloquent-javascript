@@ -16,4 +16,7 @@ export function greaterThanParameter(toTest: number, base: number) {
   return checker(toTest);
 }
 
-greaterThanParameter.checkers = new Map<number, (number: number) => boolean>();
+greaterThanParameter.checkers = new Map<
+  number,
+  ReturnType<typeof greaterThan>
+>();
