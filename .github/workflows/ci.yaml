@@ -33,13 +33,12 @@ jobs:
       - name: Tests
         run: deno test --coverage=./cov
 
-      # Until denoland/deno#14397
-      # - name: Generate Coverage
-      #   if: matrix.os == 'ubuntu-latest'
-      #   run: deno coverage --unstable --lcov ./cov > cov.lcov
+      - name: Generate Coverage
+        if: matrix.os == 'ubuntu-latest'
+        run: deno coverage --unstable --lcov ./cov > cov.lcov
 
-      # - name: Upload Coverage
-      #   if: matrix.os == 'ubuntu-latest'
-      #   uses: codecov/codecov-action@v2
-      #   with:
-      #     files: cov.lcov
+      - name: Upload Coverage
+        if: matrix.os == 'ubuntu-latest'
+        uses: codecov/codecov-action@v2
+        with:
+          files: cov.lcov

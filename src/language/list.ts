@@ -8,7 +8,7 @@ export function arrayToList<T>([value, ...values]: T[]): List<T> | null {
 }
 
 export function arrayToListReduce<T>(values: T[]) {
-  // it would enter on one line if this were plain JS 🥲
+  // it would enter on one line if this were plain JS
   return values.reduceRight<List<T> | null>(
     (rest, value) => ({ value, rest }),
     null,
