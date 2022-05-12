@@ -1,13 +1,11 @@
-export const isDivisbleBy = (n: number, divisor: number) => n % divisor === 0;
+export const divisibleBy = (n: number, divisor: number) => n % divisor === 0;
 
 export function fizzBuzz(max = 100) {
   const result = [];
 
   for (let number = 1; number <= max; number++) {
-    const fizz = isDivisbleBy(number, 3);
-    const buzz = isDivisbleBy(number, 5);
-
-    const fizzBuzz = fizz && buzz;
+    const fizz = divisibleBy(number, 3);
+    const buzz = divisibleBy(number, 5);
 
     if (fizz) {
       result.push("Fizz");
@@ -17,7 +15,7 @@ export function fizzBuzz(max = 100) {
       result.push(number);
     }
 
-    if (fizzBuzz) {
+    if (fizz && buzz) {
       result.push("FizzBuzz");
     }
   }

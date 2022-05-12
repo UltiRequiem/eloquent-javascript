@@ -1,6 +1,6 @@
 export function isEven(numberToTest: number) {
   if (!Number.isInteger(numberToTest) || numberToTest <= -1) {
-    throw new Error("Only positive numbers are allowed.");
+    throw new TypeError("Only positive numbers are allowed.");
   }
 
   function isEvenCore(coreNumber: number): boolean {

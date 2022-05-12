@@ -1,22 +1,15 @@
 // deno-lint-ignore-file no-explicit-any
 
-export function noisy<T extends (...args: any) => any>(
-  func: T,
-  { mute } = { mute: false },
-) {
-  return (...args: Parameters<T>) => {
-    if (!mute) {
-      console.log(`Calling "${func.name ?? ""}" with args: ${args}.`);
-    }
+export function noisy<F extends (...args: any) => any>(func: F) {
+  return (...args: Parameters<F>) => {
+    const functionName = func.name ?? "the function";
 
-    // const result = func(...args);
+    console.log(`Calling "${functionName}" with args: ${args}.`);
 
     const result = func.apply(undefined, args);
 
-    if (!mute) {
-      console.log(`Result: ${result}.`);
-    }
+    console.log(`Result: ${result}.`);
 
-    return result as ReturnType<T>;
+    return result as ReturnType<F>;
   };
 }

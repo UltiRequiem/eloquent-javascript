@@ -17,7 +17,7 @@ export function deepEqual(first: any, second: any) {
     return first === second;
   }
 
-  const [firstKeys, secondKeys] = [Object.keys(first), Object.keys(second)];
+  const [firstKeys, secondKeys] = [first, second].map(Object.keys);
 
   if (firstKeys.length !== secondKeys.length) {
     return false;
@@ -28,7 +28,7 @@ export function deepEqual(first: any, second: any) {
       return false;
     }
 
-    if (!deepEqual(first[key] as unknown, second[key])) {
+    if (!deepEqual(first[key], second[key])) {
       return false;
     }
   }

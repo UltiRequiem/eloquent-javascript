@@ -1,4 +1,4 @@
-export function reverseArray<T>(array: T[]) {
+export function reverseArray<T>(array: readonly T[]) {
   const result = [];
 
   for (let i = array.length - 1; i >= 0; i--) {

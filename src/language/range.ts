@@ -1,8 +1,9 @@
-function areNumbers(values: unknown[]): values is number[] {
+function areNumbers(values: readonly unknown[]): values is number[] {
   return values.every(Number.isInteger);
 }
+
 function assertAreNumbers(
-  values: unknown[],
+  values: readonly unknown[],
   message = "Expected all the items to be numbers.",
 ): asserts values is number[] {
   if (!areNumbers(values)) {

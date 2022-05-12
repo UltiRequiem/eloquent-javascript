@@ -2,11 +2,11 @@ export function average(array: readonly number[]) {
   return array.reduce((a, b) => a + b) / array.length;
 }
 
-export function averageFor(array: readonly number[]) {
+export function averageIterative(array: readonly number[]) {
   let count = 0;
 
-  for (const value of array) {
-    count += value;
+  for (let index = 0; index < count; index++) {
+    count += array[index];
   }
 
   return count / array.length;

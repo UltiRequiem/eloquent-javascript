@@ -1,5 +1,6 @@
 export function chessboard(length = 8) {
   let result = "";
+
   const newLines = length - 1;
 
   for (let line = 0; line < length; line++) {
