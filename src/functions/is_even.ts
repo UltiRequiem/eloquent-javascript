@@ -6,9 +6,7 @@ export function isEven(numberToTest: number) {
   function isEvenCore(coreNumber: number): boolean {
     if (coreNumber === 0) {
       return true;
-    }
-
-    if (coreNumber === 1) {
+    } else if (coreNumber === 1) {
       return false;
     }
 

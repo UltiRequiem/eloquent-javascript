@@ -1,12 +1,25 @@
-import { divisibleBy, fizzBuzz } from "./fizzbuzz.ts";
+import { BUZZ, divisibleBy, FIZZ, FIZZ_BUZZ, fizzBuzz } from "./fizzbuzz.ts";
 import { assert, assertEquals, assertFalse } from "../../deps.ts";
 
 Deno.test("[fizzBuzz]", () => {
-  const F = "Fizz";
-  const B = "Buzz";
-  const FB = "FizzBuzz";
-
-  const expected = [1, 2, F, 4, B, F, 7, 8, F, B, 11, F, 13, 14, F, FB];
+  const expected = [
+    1,
+    2,
+    FIZZ,
+    4,
+    BUZZ,
+    FIZZ,
+    7,
+    8,
+    FIZZ,
+    BUZZ,
+    11,
+    FIZZ,
+    13,
+    14,
+    FIZZ,
+    FIZZ_BUZZ,
+  ];
 
   assertEquals(fizzBuzz(15), expected);
 });

@@ -1,7 +1,7 @@
 export function chessboard(length = 8) {
   let result = "";
 
-  const newLines = length - 1;
+  const totalLines = length - 1;
 
   for (let line = 0; line < length; line++) {
     const oddLine = line % 2;
@@ -10,7 +10,7 @@ export function chessboard(length = 8) {
       result += oddLine === character % 2 ? " " : "#";
     }
 
-    if (line !== newLines) {
+    if (line < totalLines) {
       result += "\n";
     }
   }

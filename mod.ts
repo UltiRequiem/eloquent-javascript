@@ -1,3 +1,2 @@
-export * from "./src/browser/mod.ts";
-export * from "./src/language/mod.ts";
-export * from "./src/node/mod.ts";
+export * from "./src/program_structure/mod.ts";
+export * from "./src/functions/mod.ts";

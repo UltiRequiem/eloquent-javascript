@@ -1,6 +1,6 @@
 export function countChar(text: string, charToSearch: string) {
-  const occurences = [...text].filter((letter) => letter === charToSearch);
-  return occurences.length;
+  const { length } = [...text].filter((letter) => letter === charToSearch);
+  return length;
 }
 
 export function counterOcurrencesCreator(charToSearch: string) {
