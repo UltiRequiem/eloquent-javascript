@@ -1,8 +1,8 @@
-import scripts from "./scripts.json" assert { type: "json" };
+import scripts from "./scripts.json" with { type: "json" };
 
 import { reduce } from "./reduce.ts";
 
-export function characterCount(script: typeof scripts[number]) {
+export function characterCount(script: (typeof scripts)[number]) {
   return reduce(script.ranges, (count, [from, to]) => count + (to - from), 0);
 }
 

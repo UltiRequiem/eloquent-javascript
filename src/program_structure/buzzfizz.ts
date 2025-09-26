@@ -1,4 +1,4 @@
-function fizzBuzzExpected(max: number) {
+export function fizzBuzzer(max: number) {
   return Array.from({ length: max }, (_, i) => {
     const n = i + 1;
 
