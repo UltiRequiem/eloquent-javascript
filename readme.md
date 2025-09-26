@@ -87,7 +87,8 @@ Eg 👉
 
 ## Documentation
 
-Is hosted on [Deno Doc](https://doc.deno.land/https://deno.land/x/eloq/mod.ts) 📄
+Is hosted on [Deno Doc](https://doc.deno.land/https://deno.land/x/eloq/mod.ts)
+📄
 
 ## Support
 

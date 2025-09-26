@@ -17,11 +17,19 @@ Deno.test("[fizzBuzz]", () => {
     FIZZ,
     13,
     14,
-    FIZZ,
     FIZZ_BUZZ,
   ];
 
   assertEquals(fizzBuzz(15), expected);
+});
+
+Deno.test("[fizzBuzz] spot check", () => {
+  const result = fizzBuzz(20);
+
+  assertEquals(result[2], FIZZ);
+  assertEquals(result[4], BUZZ);
+  assertEquals(result[14], FIZZ_BUZZ);
+  assertEquals(result[19], BUZZ);
 });
 
 Deno.test("[isDivisbleBy]", () => {
