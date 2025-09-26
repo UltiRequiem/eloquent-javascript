@@ -4,9 +4,9 @@
 export function min(...numbers: number[]) {
   let smaller = Infinity;
 
-  for (const number of numbers) {
-    if (number < smaller) {
-      smaller = number;
+  for (const num of numbers) {
+    if (num < smaller) {
+      smaller = num;
     }
   }
 
@@ -14,10 +14,12 @@ export function min(...numbers: number[]) {
 }
 
 export function minRecursive(...numbers: number[]) {
-  const finder = (current: number, competitor?: number): number => {
+  const finder = (current: number, competitor?: number) => {
     if (!competitor) {
       return current;
-    } else if (competitor < current) {
+    }
+
+    if (competitor < current) {
       current = competitor;
     }
 
