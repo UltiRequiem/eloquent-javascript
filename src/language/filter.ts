@@ -1,11 +1,11 @@
-export type FilterCallback<T = never> = (
+export type FilterPredicate<T> = (
   item: T,
   index: number,
   array: readonly T[],
 ) => unknown;
 
-export function filter<T>(array: readonly T[], test: FilterCallback<T>) {
-  const result = [];
+export function filter<T>(array: readonly T[], test: FilterPredicate<T>) {
+  const result: T[] = [];
 
   const entries = array.entries();
 
